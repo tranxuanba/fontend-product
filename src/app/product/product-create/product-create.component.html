@@ -1,0 +1,30 @@
+<div class="col-7 m-auto">
+  <br>
+  <h1>Tạo sản phẩm mới</h1>
+  <br>
+</div>
+<div  class="col-6  m-auto">
+  <form class="" [formGroup]="productForm" (ngSubmit)="submit()">
+    <div class="row mt-3 form-group">
+      <div class="col-2 ">Name</div>
+      <div class="col-10"><input class="col-8" type="text" formControlName="name"></div>
+    </div>
+    <div class=" row mt-3 form-group">
+      <div class="col-2">Price</div>
+      <div class="col-10"><input  class="col-8" type="number" formControlName="price"></div>
+
+    </div>
+    <div class="row mt-3 form-group">
+      <div class="col-2">Description</div>
+      <div class="col-7"><textarea  class="col-4" formControlName="description"  class="form-control"  placeholder="description"></textarea></div>
+    </div>
+    <div class="row">
+      <div class="col-2 m-auto">
+        <button type="submit" class="btn mt-4 btn-primary">Submit</button>
+      </div>
+
+    </div>
+
+  </form>
+</div>
+
